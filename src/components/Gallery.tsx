@@ -1,13 +1,16 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { EffectCards } from 'swiper/modules';
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import 'swiper/css/effect-cards';
+
 
 const Gallery = () => {
-  const images = [
+  const images: { url: string; alt: string }[] = [
     { url: "./1.jpg", alt: "image 1" },
     { url: "./2.jpg", alt: "image 1" },
     { url: "./bg.webp", alt: "image 2" },
@@ -18,17 +21,18 @@ const Gallery = () => {
     <>
       <h1 className="p-4 text-center text-3xl font-bold">Gallery</h1>
       <Swiper
-        modules={[Navigation, Pagination, A11y, Autoplay]}
+        modules={[Navigation, Pagination, A11y, Autoplay, Pagination , EffectCards]}
         spaceBetween={100}
         slidesPerView={1}
         navigation
         autoplay={{ delay: 1000, disableOnInteraction: false }}
         loop={true}
         pagination={{ clickable: true }}
-        className="w-full sm:w-1/2 rounded-lg shadow-lg"
+        effect="cards"
+        className="w-full sm:w-1/2"
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center">
+          <SwiperSlide key={index} className="flex items-center justify-center rounded-lg shadow-lg">
             <img src={image.url} alt={image.alt} />
           </SwiperSlide>
         ))}
