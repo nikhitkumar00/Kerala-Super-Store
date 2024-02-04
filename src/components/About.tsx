@@ -8,7 +8,7 @@ const About = () => {
         About
       </div>
 
-      <div className="m-2 rounded-xl bg-white p-6 text-lg font-semibold shadow-xl md:w-1/2">
+      <div className="m-2 rounded-xl bg-white bg-opacity-30 p-6 text-lg font-semibold shadow-sm md:w-1/2">
         Kerala Super Store, situated at the heart of Aloor, stands as a
         prominent supermarket with a rich history. Originating as a grocery
         store in the 1980s, the establishment underwent significant growth,
