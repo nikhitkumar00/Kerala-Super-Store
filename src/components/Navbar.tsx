@@ -22,15 +22,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex h-16 items-center justify-between p-4 font-semibold capitalize">
-      <a href="#" className="text-2xl">Kerala Super Store</a>
+    <nav className="flex h-16 items-center justify-between border-b border-indigo-700 p-4 font-semibold capitalize">
+      <a href="#" className="text-2xl">
+        Kerala Super Store
+      </a>
       <ul className="hidden items-center gap-4 sm:flex">
         {terms.map((term) => (
           <li
             key={term.name}
             className={
               term.name === "Contact"
-                ? "rounded-full bg-indigo-600 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:scale-105 hover:bg-indigo-700"
+                ? "rounded-full bg-indigo-600 px-4 py-2 text-white transition-all duration-200 ease-in hover:scale-105 hover:bg-indigo-700"
                 : "transition-all duration-200 ease-in-out hover:scale-105 hover:underline"
             }
           >
@@ -53,8 +55,8 @@ const Navbar = () => {
               key={term.name}
               className={
                 term.name === "Contact"
-                  ? "w-1/2 rounded-full bg-indigo-600 px-4 py-2 text-center text-white hover:bg-indigo-700"
-                  : "w-1/2 rounded-full bg-gray-100 px-4 py-2 text-center text-black hover:bg-gray-200"
+                  ? "w-3/4 rounded-full bg-indigo-600 px-4 py-2 text-center text-white hover:bg-indigo-700"
+                  : "w-3/4 rounded-full bg-gray-100 px-4 py-2 text-center text-black hover:bg-gray-200"
               }
             >
               <a href={term.link}>{term.name}</a>

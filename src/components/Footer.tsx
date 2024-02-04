@@ -1,4 +1,10 @@
 const Footer = () => {
+  const footerLinks = [
+    { text: "About", url: "#" },
+    { text: "Privacy Policy", url: "#" },
+    { text: "Licensing", url: "#" },
+    { text: "Contact", url: "#" },
+  ];
   return (
     <footer className="bg-white ">
       <div className="p-4">
@@ -9,26 +15,13 @@ const Footer = () => {
               <img src="./insta.svg" alt="Logo" className="h-6 w-6" />
             </a>
             <ul className="mx-6 mb-4 flex space-x-3 text-sm font-medium text-black lg:mx-12">
-              <li>
-                <a href="#" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Licensing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
+              {footerLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={link.url} className="hover:underline">
+                    {link.text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="mx-6 my-6 border-t border-gray-700 lg:mx-12"></div>
