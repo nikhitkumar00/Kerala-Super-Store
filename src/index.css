@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.content{
-    background: url("https://keralasuperstore001.netlify.app/2.jpg") no-repeat center center fixed;
-    background-size: cover;
+.content {
+  background: url("https://keralasuperstore001.netlify.app/2.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+}
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
 }
