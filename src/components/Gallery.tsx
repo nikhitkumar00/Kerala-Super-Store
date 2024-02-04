@@ -1,13 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
-import { EffectCards } from 'swiper/modules';
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import 'swiper/css/effect-cards';
-
+import Marquee from "react-fast-marquee";
 
 const Gallery = () => {
   const images: { url: string; alt: string }[] = [
@@ -20,23 +11,16 @@ const Gallery = () => {
   return (
     <>
       <h1 className="p-4 text-center text-3xl font-bold">Gallery</h1>
-      <Swiper
-        modules={[Navigation, Pagination, A11y, Autoplay, Pagination , EffectCards]}
-        spaceBetween={100}
-        slidesPerView={1}
-        navigation
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-        loop={true}
-        pagination={{ clickable: true }}
-        effect="cards"
-        className="w-full sm:w-1/2"
-      >
+      <Marquee speed={100} pauseOnHover={true}>
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center rounded-lg shadow-lg">
-            <img src={image.url} alt={image.alt} />
-          </SwiperSlide>
+          <img
+            key={index}
+            src={image.url}
+            alt={image.alt}
+            className="mx-3 h-96 w-auto"
+          ></img>
         ))}
-      </Swiper>
+      </Marquee>
     </>
   );
 };
