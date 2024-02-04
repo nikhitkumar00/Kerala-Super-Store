@@ -1,23 +1,14 @@
-import CountUp from "react-countup";
-
 const About = () => {
   return (
     <div className="flex h-dvh flex-col items-center justify-center gap-10 text-center sm:gap-44 md:flex-row">
-      <div className="flex flex-col gap-4 text-6xl font-bold">
-        <div className="bg-gradient-to-r from-teal-300 to-indigo-400 bg-clip-text text-transparent">
-          About
-        </div>
-        <CountUp
-          className="rounded border border-black px-4 py-2 text-lg font-normal sm:text-2xl"
-          prefix="Since "
-          end={1980}
-          start={new Date().getFullYear()}
-          duration={5}
-          separator=""
-          enableScrollSpy={true}
-        />
+      <div
+        style={{ WebkitTextStroke: "3px black" }}
+        className="text-7xl font-extrabold text-transparent"
+      >
+        About
       </div>
-      <div className="m-2 text-lg font-semibold md:w-1/2 bg-white p-6 rounded-xl shadow-xl">
+
+      <div className="m-2 rounded-xl bg-white p-6 text-lg font-semibold shadow-xl md:w-1/2">
         Kerala Super Store, situated at the heart of Aloor, stands as a
         prominent supermarket with a rich history. Originating as a grocery
         store in the 1980s, the establishment underwent significant growth,
