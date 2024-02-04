@@ -6,7 +6,7 @@ const Contact = () => {
         <form
           action="#"
           method="POST"
-          className="rounded-xl bg-white px-9 pt-8 pb-14 shadow-xl "
+          className="rounded-xl bg-white px-9 pb-14 pt-8 sm:shadow-xl "
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
@@ -43,9 +43,7 @@ const Contact = () => {
                 ></input>
               </div>
               <div className="flex flex-col gap-2">
-                <label className="rounded-md font-semibold">
-                  Subject
-                </label>
+                <label className="rounded-md font-semibold">Subject</label>
                 <input
                   type="text"
                   placeholder="Subject"
@@ -78,58 +76,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
