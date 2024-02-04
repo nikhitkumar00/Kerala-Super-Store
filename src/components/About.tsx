@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="content flex h-dvh flex-col items-center justify-center gap-10 text-center sm:gap-44 md:flex-row">
+    <div className="content flex h-svh flex-col items-center justify-center gap-10 text-center sm:gap-44 md:flex-row">
       <div
         style={{ WebkitTextStroke: "3px black" }}
         className="text-7xl font-extrabold text-transparent"
