@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="antialiased">
       <Navbar />
-      <Intro />
       <About />
       <Gallery />
       <Contact />

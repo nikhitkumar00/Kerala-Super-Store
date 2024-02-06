@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <div className="px-6 py-2 lg:px-5">
-      <div className="mx-auto mb-6 mt-16 max-w-3xl rounded-md sm:mt-20">
+    <div className="py-2 lg:px-5">
+      <div className="mb-6 mt-16 max-w-3xl rounded-md sm:mt-20">
         <div className="py-5 text-center text-3xl font-bold">Contact Us</div>
         <form
           action="#"

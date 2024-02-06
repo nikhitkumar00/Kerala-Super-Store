@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="p-4">
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <div className="ml-12 flex gap-4">
+            <div className="flex gap-4 sm:ml-12">
               <a href="#">
                 <img
                   src="./whats.svg"
@@ -26,7 +26,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <ul className="mx-6 mb-4 flex space-x-3 text-sm font-medium text-black lg:mx-12">
+            <ul className="mb-4 flex gap-1 text-xs font-normal text-black sm:mx-6 sm:text-sm lg:mx-12">
               {footerLinks.map((link, index) => (
                 <li
                   key={index}
