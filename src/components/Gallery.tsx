@@ -17,7 +17,7 @@ const Gallery = () => {
             key={index}
             src={image.url}
             alt={image.alt}
-            className="mx-3 h-48 w-auto rounded-xl border-4 border-indigo-700 transition-all duration-200 ease-in hover:scale-95 sm:h-96"
+            className="mx-3 h-48 w-auto rounded-xl border-2 border-indigo-700 transition-all duration-200 ease-in hover:scale-95 sm:h-96"
           ></img>
         ))}
       </Marquee>

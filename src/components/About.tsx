@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="content flex h-svh flex-col items-center justify-center gap-10 text-center sm:gap-44 md:flex-row">
-      <div className="font-outline-2 text-7xl font-extrabold text-transparent">
+    <div className="flex h-[calc(100svh-64px)] flex-col items-center justify-center gap-10 bg-indigo-400 text-center sm:gap-44 md:flex-row">
+      <div className="font-outline text-7xl font-extrabold text-transparent">
         About
       </div>
       <div className="m-2 rounded-xl bg-white bg-opacity-30 p-6 text-lg font-semibold shadow-sm md:w-1/2">
